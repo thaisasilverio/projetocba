@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+} 
+
+body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*determina o tamanho do body para a altura da tela do usuário, no mínimo, assim nunca fica sobrando tela abaixo do footer*/
+}
+
+header{
+    display: flex;
+    justify-content: center;  
+    align-items: center;            /* Centraliza verticalmente */
+    padding: 10px 20px;
+    background-color: #3DC3E4;
+}
+
+#paginas, li, a{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    text-decoration: none;
+    gap: 25px;
+}
+
+main{  
+    margin: 4%;
+    flex-grow: 1; /*dtermmina que o main deverá crescer proporcionalmente ao tamanho total do espaço entre o header e o footer*/
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;  /* Distribui os itens igualmente */
+    align-items: center;            /* Centraliza verticalmente */
+    padding: 10px 20px;
+    background-color: #3DC3E4;
+    flex-shrink: 0; /*determina que o footer não deverá encolher na mudança de tamanho da tela e distribuição de outros elementos*/
+}
+
+#textoDireitos {
+    margin: 0 15px;               
+    text-align: center;
+    font-size: 0.9em;
+    flex-grow: 1;  /* Ocupa espaço disponível no centro */
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+/*------------------------------------------*/
+/*-----CSS PADRAO PARA TODAS AS PAGINAS-----*/
+/*------------------------------------------*/
+
+#mainHome {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: space-between;
+}
+
+#articleHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+#FotoSf2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+#FotoSf4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h1Home {
+    display: flex;
+    justify-content: center;
+}
