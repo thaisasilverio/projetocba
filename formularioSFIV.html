@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="https://placehold.co/110x110" alt="logo CBA">
+        </figure>
+        <nav>
+            <ul id="paginas">
+                <li><a href="">Sala Fornos 2</a></li>
+                <li><a href="">Sala Fornos 4</a></li>
+                <li><a href="">Relatórios Sala 2</a></li> 
+                <li><a href="">Relatórios Sala 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainFormulario2">
+        <h1>SALAS FORNOS 4</h1>
+    </main>
+    <article id="articleFormulario2">
+        <form class="formForm">
+            <label for="Selecione o Forno:"> Selecione o Forno:</label>
+            <select name="Selecione o Forno:">
+                <option value="701">701</option>
+                <option value="702">702</option>
+                <option value="703">703</option>
+                <option value="704">704</option>
+                <option value="705">705</option>
+                <option value="706">406</option>
+                <option value="707">407</option>
+                <option value="708">408</option>
+            </select>
+
+            <label for="Data"> Selecione a Data:</label>
+            <input type="date">
+
+            <label for="EA"> Efeito Anôdico:</label>
+            <input type="radio" value="SIM"> Sim
+            <input type="radio" value="SIM"> Não
+
+            <!-- Elemento Escondido-->
+             <div id="elementoEAsim">
+                <label>Por Quanto Tempo:</label>
+                <input type="time">
+             </div>
+
+             <label for="Cuba"> Cuba Vazou:</label>
+            <input type="radio" value="SIM"> Sim
+            <input type="radio" value="SIM"> Não
+
+            <!-- Elemento Escondido-->
+             <div id="elementoCubaSim">
+                <label>Quantas Vezes:</label>
+                <input type="time">
+             </div>
+
+             <label for="Temperatura"> Temperatura Elevada:</label>
+            <input type="radio" value="SIM"> Sim
+            <input type="radio" value="SIM"> Não
+
+            <!-- Elemento Escondido-->
+             <div id="elementoTemp">
+                <label>Quanto em Cº:</label>
+                <input type="number">
+             </div>
+
+             <label for="descricao">Descreva as caracteristica(em palavras chaves):</label>
+             <input type="text">
+
+             <button type="submit">Enviar</button>
+        </form>
+    </article>
+    <footer>
+        <figure>
+            <img src="https://placehold.co/110x110" alt="logo CBA">
+        </figure>
+        <h4 id="textoDireitos">&copy; Companhia Brasileira de Alumínio Al - Todos os direitos reservados</h4>
+    </footer>
+</body>
+</html>
