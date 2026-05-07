@@ -54,7 +54,6 @@ footer{
     font-family: "Montserrat Alternates", sans-serif;
 }
 
-
 /*------------------------------------------*/
 /*-----------------CSS HOME-----------------*/
 /*------------------------------------------*/
@@ -127,6 +126,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 80px;
 }
 
 .sf2-campo , .sf4-campo {
@@ -151,12 +151,6 @@ a {
     resize: none;
 }
 
-.sf2-radio , .sf4-radio {
-    display: flex;
-    gap: 15px;
-    border-radius: 15px;
-    height: 20px;
-}
 
 .sf2-btn , .sf4-btn{
     margin: 20px auto;
@@ -243,3 +237,4 @@ label {
     cursor: pointer;
     font-size: 16px;
 }
+

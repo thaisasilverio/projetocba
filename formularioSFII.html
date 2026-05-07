@@ -10,7 +10,7 @@
 <body>
     <header>
         <figure>
-            <img src="" alt="logo CBA">
+            <img src="imagens/cbalogo.png" alt="logo CBA" width="120">
         </figure>
         <nav>
             <ul id="paginas">
@@ -29,7 +29,7 @@
         <form class="sf2-form">
             <div class="sf2-coluna">
                 <div class="sf2-campo">
-                    <label>Selecione o Forno:</label>
+                    <label>Selecione o Forno</label>
                     <select class="sf2-input">
                         <option>Forno</option>
                         <option value="401">401</option>
@@ -120,37 +120,16 @@
                 </div>
                 <div class="sf2-campo">
                     <label>Efeito Anódico:</label>
-                    <div class="sf2-radio">
-                        <label><input type="radio" name="ea">Sim</label>
-                        <label><input type="radio" name="ea">Não</label>
-                    </div>
+                    <input type="number" class="sf4-input">            
                     <div class="sf2-campo">
-                        <label>Por quanto tempo:</label>
-                        <input type="time" class="sf2-input">
-                    </div>
-                    <div class="sf2-campo">
-                        <label>Cuba Vazou:</label>
-                        <div class="sf2-radio">
-                            <label><input type="radio" name="cuba">Sim</label>
-                            <label><input type="radio" name="cuba">Não</label>
-                        </div>
-                        <div class="sf2-campo">
-                            <label>Quantas Vezes:</label>
-                            <input type="number" class="sf4-input">
-                        </div>
+                        <label>Tensão:</label>
+                        <input type="number" class="sf4-input" step="0.01">
                     </div>
                 </div>
             </div>
             <div class="sf2-coluna">
                 <div class="sf2-campo">
-                    <label>Temperatura Elevada:</label>
-                    <div class="sf2-radio">
-                        <label><input type="radio" name="temp">Sim</label>
-                        <label><input type="radio" name="temp">Não</label>
-                    </div>
-                </div>
-                <div class="sf2-campo">
-                    <label>Quantos em ºC:</label>
+                    <label>Temperatura:</label>
                     <input type="number" class="sf2-input">
                 </div>
                 <div class="sf2-campo">
@@ -162,10 +141,7 @@
         </form>
     </article>
     <footer>
-        <figure>
-            <img src="" alt="logo CBA">
-        </figure>
-        <h4 id="textoDireitos">&copy; Companhia Brasileira de Alumínio Al - Todos os direitos reservados</h4>
+        <h2 id="textoDireitos">&copy; Companhia Brasileira de Alumínio Al - Todos os direitos reservados</h2>
     </footer>
 </body>
 
