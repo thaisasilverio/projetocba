@@ -54,8 +54,9 @@ footer{
     font-family: "Montserrat Alternates", sans-serif;
 }
 
+
 /*------------------------------------------*/
-/*-----CSS PADRAO PARA TODAS AS PAGINAS-----*/
+/*-----------------CSS HOME-----------------*/
 /*------------------------------------------*/
 
 #mainHome {
@@ -75,8 +76,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-
 }
 
 #FotoSf4 {
@@ -89,3 +88,94 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+a {
+    color: rgb(3, 8, 39);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.botaoHome {
+    background-color: #3DC3E4;
+    border: 0;
+}
+
+/*------------------------------------------*/
+/*-------------CSS FORMULARIOS--------------*/
+/*------------------------------------------*/
+
+#mainFormulario2 {
+    display: flex;
+    justify-content: center;
+}
+
+.sf2-container , .sf4-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sf2-form , .sf4-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sf2-coluna , .sf4-coluna {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sf2-campo , .sf4-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sf2-input , .sf4-input {
+    background-color: rgb(101, 214, 240);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sf2-textarea, .sf4-textarea {
+    background-color: rgb(101, 214, 240);
+    border: none;
+    border-radius: 15px;
+    height: 120px;
+    padding: 10px;
+    resize: none;
+}
+
+.sf2-radio , .sf4-radio {
+    display: flex;
+    gap: 15px;
+    background-color: rgb(173, 226, 237);
+    border-radius: 15px;
+    height: 20px;
+}
+
+.sf2-btn , .sf4-btn{
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*------------------------------------------*/
+/*-------------CSS RELATÓRIO--------------*/
+/*------------------------------------------*/
+
+#relatorioMainSf2 {
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+

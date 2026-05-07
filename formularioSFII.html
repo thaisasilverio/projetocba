@@ -8,76 +8,87 @@
 <body>
     <header>
         <figure>
-            <img src="https://placehold.co/110x110" alt="logo CBA">
+            <img src="" alt="logo CBA">
         </figure>
         <nav>
             <ul id="paginas">
-                <li><a href="">Sala Fornos 2</a></li>
-                <li><a href="">Sala Fornos 4</a></li>
-                <li><a href="">Relatórios Sala 2</a></li> 
-                <li><a href="">Relatórios Sala 4</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formularioSFII.html">Formulário Sala 2</a></li>
+                <li><a href="formularioSFIV.html">Formulário Sala 4</a></li>
+                <li><a href="relatorioSFII.html">Relatório Sala 2</a></li> 
+                <li><a href="relatorioSFIV.html">Relatório Sala 4</a></li>
             </ul>
         </nav>
     </header>
     <main id="mainFormulario2">
         <h1>SALAS FORNOS 2</h1>
     </main>
-    <article id="articleFormulario2">
-        <form class="formForm">
-            <label for="Selecione o Forno:"> Selecione o Forno:</label>
-            <select name="Selecione o Forno:">
-                <option value="401">401</option>
-                <option value="402">402</option>
-                <option value="403">403</option>
-                <option value="404">404</option>
-                <option value="405">405</option>
-                <option value="406">406</option>
-                <option value="407">407</option>
-                <option value="408">408</option>
-            </select>
-
-            <label for="Data"> Selecione a Data:</label>
-            <input type="date">
-
-            <label for="EA"> Efeito Anôdico:</label>
-            <input type="radio" value="SIM"> Sim
-            <input type="radio" value="SIM"> Não
-
-            <!-- Elemento Escondido-->
-             <div id="elementoEAsim">
-                <label>Por Quanto Tempo:</label>
-                <input type="time">
-             </div>
-
-             <label for="Cuba"> Cuba Vazou:</label>
-            <input type="radio" value="SIM"> Sim
-            <input type="radio" value="SIM"> Não
-
-            <!-- Elemento Escondido-->
-             <div id="elementoCubaSim">
-                <label>Quantas Vezes:</label>
-                <input type="time">
-             </div>
-
-             <label for="Temperatura"> Temperatura Elevada:</label>
-            <input type="radio" value="SIM"> Sim
-            <input type="radio" value="SIM"> Não
-
-            <!-- Elemento Escondido-->
-             <div id="elementoTemp">
-                <label>Quanto em Cº:</label>
-                <input type="number">
-             </div>
-
-             <label for="descricao">Descreva as caracteristica(em palavras chaves):</label>
-             <input type="text">
-
-             <button type="submit">Enviar</button>
+    <article class="f2-container">
+        <form class="sf2-form">
+            <div class="sf2-coluna">
+                <div class="sf2-campo">
+                    <label>Selecione o Forno:</label>
+                    <select class="sf2-input">
+                        <option value="401">401</option>
+                        <option value="402">402</option>
+                        <option value="403">403</option>
+                        <option value="404">404</option>
+                        <option value="405">405</option>
+                        <option value="406">406</option>
+                        <option value="407">407</option>
+                        <option value="408">408</option>
+                    </select>
+                </div>
+                <div class="sf2-campo">
+                    <label>Selecione a Data:</label>
+                    <input type="date" class="sf2-input">
+                </div>
+                <div class="sf2-campo">
+                    <label>Efeito Anódico:</label>
+                    <div class="sf2-radio">
+                        <label><input type="radio" name="ea">Sim</label>
+                        <label><input type="radio" name="ea">Não</label>
+                    </div>
+                    <div class="sf2-campo">
+                        <label>Por quanto tempo:</label>
+                        <input type="time" class="sf2-input">
+                    </div>
+                    <div class="sf2-campo">
+                        <label>Cuba Vazou:</label>
+                        <div class="sf2-radio">
+                            <label><input type="radio" name="cuba">Sim</label>
+                            <label><input type="radio" name="cuba">Não</label>
+                        </div>
+                        <div class="sf2-campo">
+                            <label>Quantas Vezes:</label>
+                            <input type="number" class="sf4-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sf2-coluna">
+                <div class="sf2-campo">
+                    <label>Temperatura Elevada:</label>
+                    <div class="sf2-radio">
+                        <label><input type="radio" name="temp">Sim</label>
+                        <label><input type="radio" name="temp">Não</label>
+                    </div>
+                </div>
+                <div class="sf2-campo">
+                    <label>Quantos em ºC:</label>
+                    <input type="number" class="sf2-input">
+                </div>
+                <div class="sf2-campo">
+                    <label>Descreva as características:</label>
+                    <textarea class="sf2-textarea"></textarea>
+                </div>
+            </div>
+            <button class="sf2-btn">Enviar</button>
         </form>
     </article>
-    <footer>
+     <footer>
         <figure>
-            <img src="https://placehold.co/110x110" alt="logo CBA">
+            <img src="" alt="logo CBA">
         </figure>
         <h4 id="textoDireitos">&copy; Companhia Brasileira de Alumínio Al - Todos os direitos reservados</h4>
     </footer>
