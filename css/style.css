@@ -154,7 +154,6 @@ a {
 .sf2-radio , .sf4-radio {
     display: flex;
     gap: 15px;
-    background-color: rgb(173, 226, 237);
     border-radius: 15px;
     height: 20px;
 }
@@ -169,13 +168,78 @@ a {
     cursor: pointer;
 }
 
+label {
+    font-size: medium;
+    font-weight: bold;
+}
+
 /*------------------------------------------*/
-/*-------------CSS RELATÓRIO--------------*/
+/*-------------CSS RELATÓRIO----------------*/
 /*------------------------------------------*/
 
 #relatorioMainSf2 {
     display: flex;
-flex-direction: column;
-align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
 }
 
+.tituloSala {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.subtituloSala {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.articleRelat2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formRelat2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.campoRelatorio {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.campoRelatorio label {
+    font-size: 20px;
+}
+
+.campoRelatorio select {
+    width: 165px;
+    padding: 10px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.campoRelatorio input {
+    width: 130px;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background-color: #3DC3E4;
+}
+
+.formRelat2 button {
+    padding: 10px 19px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
