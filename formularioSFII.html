@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <div class="sf2-coluna">
                 <div class="sf2-campo">
                     <label>Selecione o Forno</label>
-                    <select class="sf2-input">
+                    <select id="forno" class="sf2-input">
                         <option>Forno</option>
                         <option value="401">401</option>
                         <option value="402">402</option>
@@ -116,29 +117,30 @@
                 </div>
                 <div class="sf2-campo">
                     <label>Selecione a Data:</label>
-                    <input type="date" class="sf2-input">
+                    <input id="data" type="date" class="sf2-input">
                 </div>
                 <div class="sf2-campo">
                     <label>Efeito Anódico:</label>
-                    <input type="number" class="sf4-input">            
+                    <input id="EA" type="number" class="sf4-input" step="0.01">            
                     <div class="sf2-campo">
                         <label>Tensão:</label>
-                        <input type="number" class="sf4-input" step="0.01">
+                        <input id="tensao" type="number" class="sf4-input" step="0.01">
                     </div>
                 </div>
             </div>
             <div class="sf2-coluna">
                 <div class="sf2-campo">
                     <label>Temperatura:</label>
-                    <input type="number" class="sf2-input">
+                    <input id="temperatura" type="number" class="sf2-input">
                 </div>
                 <div class="sf2-campo">
                     <label>Descreva as características:</label>
-                    <textarea class="sf2-textarea"></textarea>
+                    <textarea id="descricao" class="sf2-textarea"></textarea>
                 </div>
             </div>
-            <button type="submit" class="sf2-btn">Enviar</button>
+            <button type="button" onclick="feedback()" class="sf2-btn">Enviar</button>
         </form>
+        <pre id="resultado"></pre>
     </article>
     <footer>
         <h2 id="textoDireitos">&copy; Companhia Brasileira de Alumínio Al - Todos os direitos reservados</h2>

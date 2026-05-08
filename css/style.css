@@ -167,6 +167,21 @@ label {
     font-weight: bold;
 }
 
+#resultado{
+    width: 500px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border: 1px solid black;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    background-color: white;
+}
 /*------------------------------------------*/
 /*-------------CSS RELATÓRIO----------------*/
 /*------------------------------------------*/
