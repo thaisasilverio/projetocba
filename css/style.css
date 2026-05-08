@@ -61,7 +61,6 @@ footer{
 #mainHome {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     justify-content: space-between;
 }
 
@@ -86,6 +85,7 @@ footer{
 #h1Home {
     display: flex;
     justify-content: center;
+
 }
 
 a {
@@ -186,23 +186,12 @@ label {
 /*-------------CSS RELATÓRIO----------------*/
 /*------------------------------------------*/
 
+
 #relatorioMainSf2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 55px;
-}
-
-.tituloSala {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.subtituloSala {
-    font-size: 28px;
-    font-weight: bold;
 }
 
 .articleRelat2 {
@@ -216,6 +205,7 @@ label {
     flex-direction: column;
     align-items: center;
     gap: 45px;
+    margin-top: 40px;
 }
 
 .campoRelatorio {
@@ -253,3 +243,105 @@ label {
     font-size: 16px;
 }
 
+/*------------------------------------------*/
+/*---------RESPONSIVIDADE TELAS GRANDES-----*/
+/*----------------
+
+@media screen and (min-width: 1440px) {
+
+    main {
+        max-width: 1600px;
+        margin: 40px auto;
+    }
+
+    .sf2-container,
+    .sf4-container {
+        max-width: 1600px;
+    }
+
+    .sf2-form,
+    .sf4-form {
+        gap: 60px;
+    }
+
+    .sf2-coluna,
+    .sf4-coluna {
+        padding: 100px;
+    }
+
+    .sf2-input,
+    .sf4-input,
+    .sf2-textarea,
+    .sf4-textarea {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    .sf2-btn,
+    .sf4-btn,
+    .formRelat2 button {
+        font-size: 18px;
+        padding: 14px 28px;
+    }
+
+    #resultado {
+        width: 700px;
+        font-size: 18px;
+    }
+
+    .tituloSala {
+        font-size: 30px;
+    }
+
+    .subtituloSala {
+        font-size: 38px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    main {
+        max-width: 1800px;
+    }
+
+    .sf2-container,
+    .sf4-container {
+        max-width: 1800px;
+    }
+
+    .sf2-coluna,
+    .sf4-coluna {
+        padding: 120px;
+    }
+
+    .sf2-input,
+    .sf4-input,
+    .sf2-textarea,
+    .sf4-textarea {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 22px;
+    }
+
+    .tituloSala {
+        font-size: 36px;
+    }
+
+    .subtituloSala {
+        font-size: 44px;
+    }
+
+    #resultado {
+        width: 850px;
+    }
+}
