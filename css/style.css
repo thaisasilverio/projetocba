@@ -114,13 +114,12 @@ a {
     margin: 0 auto;
 }
 
-.sf2-form , .sf4-form {
+.sf2-form, .sf4-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
-
 .sf2-coluna , .sf4-coluna {
     width: 45%;
     display: flex;
@@ -152,9 +151,10 @@ a {
 }
 
 
-.sf2-btn , .sf4-btn{
+.sf2-btn, .sf4-btn {
+    flex-basis: 100%;
+    max-width: 200px;
     margin: 20px auto;
-    display: block;
     padding: 10px 20px;
     background-color: black;
     color: white;
@@ -243,105 +243,3 @@ label {
     font-size: 16px;
 }
 
-/*------------------------------------------*/
-/*---------RESPONSIVIDADE TELAS GRANDES-----*/
-/*----------------
-
-@media screen and (min-width: 1440px) {
-
-    main {
-        max-width: 1600px;
-        margin: 40px auto;
-    }
-
-    .sf2-container,
-    .sf4-container {
-        max-width: 1600px;
-    }
-
-    .sf2-form,
-    .sf4-form {
-        gap: 60px;
-    }
-
-    .sf2-coluna,
-    .sf4-coluna {
-        padding: 100px;
-    }
-
-    .sf2-input,
-    .sf4-input,
-    .sf2-textarea,
-    .sf4-textarea {
-        font-size: 18px;
-        padding: 14px;
-    }
-
-    label {
-        font-size: 20px;
-    }
-
-    .sf2-btn,
-    .sf4-btn,
-    .formRelat2 button {
-        font-size: 18px;
-        padding: 14px 28px;
-    }
-
-    #resultado {
-        width: 700px;
-        font-size: 18px;
-    }
-
-    .tituloSala {
-        font-size: 30px;
-    }
-
-    .subtituloSala {
-        font-size: 38px;
-    }
-
-    a {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-
-    main {
-        max-width: 1800px;
-    }
-
-    .sf2-container,
-    .sf4-container {
-        max-width: 1800px;
-    }
-
-    .sf2-coluna,
-    .sf4-coluna {
-        padding: 120px;
-    }
-
-    .sf2-input,
-    .sf4-input,
-    .sf2-textarea,
-    .sf4-textarea {
-        font-size: 20px;
-    }
-
-    label {
-        font-size: 22px;
-    }
-
-    .tituloSala {
-        font-size: 36px;
-    }
-
-    .subtituloSala {
-        font-size: 44px;
-    }
-
-    #resultado {
-        width: 850px;
-    }
-}
