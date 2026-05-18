@@ -1,5 +1,38 @@
 'use strict'
 
+const horarioEA = document.getElementById("horarioEA")
+const inputEA = document.getElementById("ea")
+
+horarioEA.addEventListener("change", function () {
+
+    if (horarioEA.value == "48h") {
+        inputEA.value = 0.50
+    } else if (horarioEA.value == "72h") {
+        inputEA.value = 0.33
+    } else if (horarioEA.value == "96h") {
+        inputEA.value = 0.25
+    } else {
+        inputEA.value = ""
+    }
+
+})
+
+const horarioDB = document.getElementById("horarioDB")
+const inputDB = document.getElementById("db")
+
+horarioDB.addEventListener("change", function(){
+
+    if (horarioDB.value == "48h") {
+        inputDB.value = 0.25
+    } else if (horarioDB.value == "72h") {
+        inputDB.value = 0.20
+    } else if (horarioDB.value == "96h") {
+        inputDB.value = 0.15
+    } else {
+        inputDB.value = ""
+    }
+})
+
 function feedback() {
     let data = document.getElementById("data").value;
     let forno = document.getElementById("forno").value;
